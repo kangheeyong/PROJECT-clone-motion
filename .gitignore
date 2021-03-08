@@ -1,0 +1,9 @@
+*.un~
+*.swp
+*.so
+*.pyc
+__pycache__
+.DS_Store
+.idea
+.mypy_cache
+dist
