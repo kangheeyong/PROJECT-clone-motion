@@ -22,23 +22,16 @@ class App {
     this.page = new PageComponent(PageItemComponent);
     this.page.attachTo(appRoot);
 
-    // const image = new ImageComponent(
-    //   "Image Title",
-    //   "https://picsum.photos/600/300"
-    // );
-    // this.page.addChild(image);
+    // For demo :)
+    this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/800/300'));
+    this.page.addChild(new VideoComponent('Video Title', 'https://youtu.be/D7cwvvA7cP0'));
+    this.page.addChild(new NoteComponent('Note Title', "Don't forget to code your dream"));
+    this.page.addChild(new TodoComponent('Todo Title', 'TypeScript Course!'));
+    this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/800/400'));
+    this.page.addChild(new VideoComponent('Video Title', 'https://youtu.be/D7cwvvA7cP0'));
+    this.page.addChild(new NoteComponent('Note Title', "Don't forget to code your dream"));
+    this.page.addChild(new TodoComponent('Todo Title', 'TypeScript Course!'));
 
-    // const note = new NoteComponent("Note title", "Note Body");
-    // this.page.addChild(note);
-
-    // const video = new VidepComponent(
-    //   "Video Title",
-    //   "https://www.youtube.com/embed/U21JRAfjUBw"
-    // );
-    // this.page.addChild(video);
-
-    // const todo = new TodoComponent("Todo title", "Todo input");
-    // this.page.addChild(todo);
 
     this.bindElementTodialog<MediaSectionInput>(
       "#new-image",
